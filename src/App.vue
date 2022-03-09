@@ -1,28 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TodoList msg="Hello Vue!"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoList from './components/TodoList.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  //name: 'App',: 작성을 안해도 정상 동작한다?/ 작성을 안하면 파일명으로 export되는듯 
+  components: {//임포트 하고싶은 컴포넌트를 모아 놓은 객체인 듯?
+    TodoList
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
